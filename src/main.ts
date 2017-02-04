@@ -1,5 +1,5 @@
-import { Application } from '@glimmer/application';
-import { Resolver, ResolverConfiguration, BasicModuleRegistry } from '@glimmer/resolver';
+import Application from '@glimmer/application';
+import Resolver, { ResolverConfiguration, BasicModuleRegistry } from '@glimmer/resolver';
 import config from './config/environment';
 import moduleMap from './config/module-map';
 
