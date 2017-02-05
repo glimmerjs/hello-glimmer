@@ -4,7 +4,7 @@ import config from './config/environment';
 import moduleMap from './config/module-map';
 
 const resolverConfiguration: ResolverConfiguration = {
-  app: { rootName: config.modulePrefix },
+  app: { name: config.modulePrefix, rootName: config.modulePrefix },
   types: config.moduleConfiguration.types,
   collections: config.moduleConfiguration.collections
 };

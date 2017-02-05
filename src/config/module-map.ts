@@ -4,4 +4,6 @@
  *  contents.
  */
 
-export default moduleMap = {};
+const moduleMap = {};
+
+export default moduleMap;
