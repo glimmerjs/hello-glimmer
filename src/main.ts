@@ -13,13 +13,14 @@ console.log('resolverConfiguration', resolverConfiguration);
 console.log('moduleMap', moduleMap);
 
 export default class App extends Application {
-  constructor() {
+  constructor(options) {
     let moduleRegistry = new BasicModuleRegistry(moduleMap);
     let resolver = new Resolver(resolverConfiguration, moduleRegistry);
 
     super({
       rootName: config.modulePrefix,
-      resolver
+      resolver,
+      ...options
     });
   }
 }
